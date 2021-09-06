@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="TeacherDashboard.master.cs" Inherits="Vclass.TeacherDashboard1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Admin</title>
+    <style>
+        #Panel1{
+            background-color:blueviolet;
+        }
+        #form1{
+            border:none;
+        }
+    </style>
+    <link href="../StyleSheet2.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+   
+</head>
+<body>
+    <form id="form1" runat="server">
+        <
+        <asp:Panel ID="Panel1" runat="server" CssClass="container" style="z-index: 1; left: 10px; top: 15px; position: absolute; height: 85px; width: 1329px; margin-bottom: 31px;">
+            <asp:Image ID="Image1" runat="server" style="z-index: 1; left: 20px; top: 13px; position: absolute; height: 60px; width: 75px" />
+            <asp:Label ID="lblEmail" runat="server" CssClass="labels" style="z-index: 1; color :white; left: 1001px; top: 61px; position: absolute" Text="Label"></asp:Label>
+            <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/images/images/manage.jpg" style="z-index: 1; left: 1212px; top: 16px; position: absolute; height: 39px; width: 44px" OnClick="ImageButton1_Click" />
+            <asp:ImageButton ID="btnLogout" runat="server" ImageUrl="~/images/images/logout.png" OnClick="btnLogout_Click" style="z-index: 1; left: 1269px; top: 14px; position: absolute; height: 41px; width: 46px" />
+            <asp:Label ID="lblName" runat="server" CssClass="labels" style="z-index: 1; left: 124px; color :white; top: 63px; position: absolute" Text="Label"></asp:Label>
+            <asp:Label ID="lblStaffID" runat="server" CssClass="labels"  style="z-index: 1; left: 124px; color :white; top: 14px; position: absolute" Text="Label"></asp:Label>
+            <asp:Label ID="lblSubject" runat="server" CssClass="labels"  style="z-index: 1; left: 703px; color :white; top: 4px; position: absolute" Text="Label"></asp:Label>
+            
+        </asp:Panel>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        
+    </form>
+</body>
+</html>

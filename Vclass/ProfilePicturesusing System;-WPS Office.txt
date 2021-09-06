@@ -1,0 +1,37 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
+//add this for MessageBox
+using System.Windows.Forms;
+
+// add data function classes
+using System.Data;
+
+namespace LoginSysten
+{
+    public class Config
+    {
+        string ConectionString = "";  // save connection string
+        public MySqlConnection connection = null;
+        public string server = "127.0.0.1";// MySQL host / ip of the computer
+        public string user = "root";// MySQL user
+        public string password = "";// MySQL password 
+        DataSet ds;
+        DataTable dt;
+        public string Table = "user_info"; // initialize db table
+        public string ConnectionType = "";
+        string RecordSource = "";
+
+        DataGridView tempdata;
+
+        public Config()
+        {
+
+        }
+
+       
+    }
+}

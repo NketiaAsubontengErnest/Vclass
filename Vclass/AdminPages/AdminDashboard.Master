@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminDashboard.Master.cs" Inherits="Vclass.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+    <title></title>
+    <link href="../StyleSheet2.css" rel="stylesheet" />
+    <style>
+        #form1{
+            border:none;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:Panel ID="Panel2" CssClass="container" runat="server" style="z-index: 1; left: 10px; top: 15px; position: absolute; height: 44px; width: 1329px">
+                <asp:Label ID="lblAdmin" CssClass="labels" runat="server" style="z-index: 1; left: 85px; top: 11px; position: absolute" Text="Label"></asp:Label>
+                <asp:Label ID="lblId" CssClass="labels" runat="server" style="z-index: 1; left: 1132px; top: 14px; position: absolute" Text="Label"></asp:Label>
+                 <asp:ImageButton ID="btnMange" runat="server" ImageUrl="~/images/images/manage.jpg" OnClick="btnMange_Click" style="z-index: 1; left: 1214px; top: 2px; position: absolute; height: 37px; width: 42px" />
+                 <asp:ImageButton ID="btnLogout" runat="server" ImageUrl="~/images/images/logout.png" OnClick="btnLogout_Click" style="z-index: 1; left: 1269px; top: 3px; position: absolute; height: 33px; width: 39px" />
+            </asp:Panel>
+        
+        <asp:Panel ID="Panel1" CssClass="container" runat="server" style="z-index: 1; left: 10px; top: 65px; position: absolute; height: 659px; width: 188px">
+            <asp:Image ID="Image1" runat="server" style="z-index: 1; left: 51px; top: 21px; position: absolute; height: 68px; width: 84px;" />
+            <asp:Button ID="btnCreate" CssClass="Button" runat="server" style="z-index: 1; left: 3px; top: 118px; position: absolute" Text="Create Acccount" OnClick="btnCreate_Click" />
+            <asp:Button ID="btnAddStudent" CssClass="Button" runat="server" style="z-index: 1; left: 2px; top: 188px; position: absolute" Text="Add Student" OnClick="btnAddStudent_Click" />
+            <asp:Button ID="btnList" CssClass="Button" runat="server" style="z-index: 1; left: 2px; top: 260px; position: absolute" Text="View List" OnClick="btnList_Click" />
+        </asp:Panel>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+              
+            </asp:ContentPlaceHolder>
+        </div>
+       
+         
+    </form>
+</body>
+</html>
